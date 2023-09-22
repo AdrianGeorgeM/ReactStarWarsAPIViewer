@@ -1,0 +1,49 @@
+@keyframes borderGlow {
+	0% {
+		box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12; /* BB-8 orange */
+	}
+	25% {
+		box-shadow: 0 0 10px #3498db, 0 0 20px #3498db; /* R2D2 blue */
+	}
+	50% {
+		box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f; /* C-3PO gold */
+	}
+	75% {
+		box-shadow: 0 0 10px #c0392b, 0 0 20px #c0392b; /* Sith red */
+	}
+	100% {
+		box-shadow: 0 0 10px #27ae60, 0 0 20px #27ae60; /* Yoda green */
+	}
+}
+
+.results-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-size: cover;
+	padding: 20px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.result-card {
+	flex-basis: calc(33.333% - 20px);
+	margin: 10px;
+	padding: 20px;
+	border: 3px solid #f39c12;
+	border-radius: 12px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ecf0f1;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s ease;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	animation: borderGlow 5s infinite alternate;
+}
+
+.result-card:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	border-color: #3498db;
+}

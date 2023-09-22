@@ -1,0 +1,122 @@
+@keyframes pulse {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes colorChange {
+	0%,
+	100% {
+		filter: brightness(100%);
+	}
+	50% {
+		filter: brightness(140%);
+	}
+}
+
+@keyframes titleTwinkle {
+	0%,
+	100% {
+		text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f;
+	}
+	50% {
+		text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f, 0 0 40px #f1c40f;
+	}
+}
+
+/* ============== Text Styles ============== */
+
+.starshipTitle {
+	font-family: 'Orbitron', sans-serif;
+	color: #f1c40f;
+	font-size: 1em;
+	text-align: center;
+	animation: pulse 2s infinite alternate, titleTwinkle 3s infinite alternate;
+}
+
+.starshipModel {
+	color: #fff;
+	font-size: 0.7em;
+}
+.starshipManufacturer {
+	color: #3498db;
+	font-size: 0.8em;
+}
+.starshipCost {
+	color: #e74c3c;
+	font-size: 0.9em;
+}
+.starshipLength {
+	color: #2ecc71;
+	font-size: 1em;
+}
+.starshipCrew {
+	color: #9b59b6;
+	font-size: 1.1em;
+}
+.starshipPassengers {
+	color: #f1c40f;
+	font-size: 1.2em;
+}
+.starshipCargo {
+	color: #95a5a6;
+	font-size: 1.3em;
+}
+
+.starshipModel,
+.starshipManufacturer,
+.starshipCost,
+.starshipLength,
+.starshipCrew,
+.starshipPassengers,
+.starshipCargo {
+	font-family: 'Orbitron', sans-serif;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: left;
+	border-left: 4px solid transparent;
+	transition: all 0.3s ease;
+	background-image: linear-gradient(
+		to right,
+		transparent 50%,
+		rgba(255, 255, 255, 0.2) 50%
+	);
+	background-size: 200% 100%;
+}
+
+/* ============== Hover Effects ============== */
+
+.starshipModel:hover,
+.starshipManufacturer:hover,
+.starshipCost:hover,
+.starshipLength:hover,
+.starshipCrew:hover,
+.starshipPassengers:hover,
+.starshipCargo:hover {
+	border-left-color: currentColor;
+	background-position: 200% 100%;
+	animation: swing 0.7s ease-in-out, colorChange 2s infinite alternate;
+	box-shadow: 0px 0px 10px currentColor;
+}

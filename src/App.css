@@ -1,0 +1,62 @@
+.App {
+	text-align: center;
+	background-image: radial-gradient(circle at center, #000, #222 40%, #000 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #f1c40f;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.App::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	animation: starfieldMove 200s infinite linear;
+}
+
+.App-title {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 4em;
+	position: relative;
+	text-shadow: 2px 2px 4px #000;
+	animation: titleGlow 3s infinite alternate, float 3s infinite ease-in-out;
+}
+
+@keyframes starfieldMove {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 500px 1000px;
+	}
+}
+
+@keyframes titleGlow {
+	0%,
+	100% {
+		text-shadow: 2px 2px 4px #000;
+	}
+	50% {
+		text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f;
+	}
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}

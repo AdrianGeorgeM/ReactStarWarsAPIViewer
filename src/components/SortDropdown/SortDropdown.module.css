@@ -1,0 +1,30 @@
+.dropdown-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.dropdown {
+	padding: 0.5rem;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1rem;
+	border: 2px solid #f1c40f;
+	background-color: #222;
+	color: #f1c40f;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	outline: none;
+}
+
+.dropdown option {
+	background-color: #222;
+	color: #f1c40f;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1rem;
+}
+
+.dropdown:hover {
+	background-color: #f1c40f;
+	color: #222;
+}

@@ -1,0 +1,109 @@
+@keyframes titleGlow {
+	0%,
+	100% {
+		text-shadow: 2px 2px 4px #000000;
+	}
+	50% {
+		text-shadow: 0 0 20px #f1c40f, 0 0 30px #f1c40f;
+	}
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes colorChange {
+	0%,
+	100% {
+		filter: brightness(100%);
+	}
+	50% {
+		filter: brightness(130%);
+	}
+}
+
+/* ============== Text Styles ============== */
+
+.title {
+	animation: titleGlow 2s infinite alternate, pulse 2s infinite alternate;
+	color: #f1c40f;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1em;
+	margin-bottom: 15px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.episode,
+.director,
+.producer,
+.releaseDate,
+.openingCrawl {
+	background-image: linear-gradient(
+		to right,
+		transparent 50%,
+		rgba(255, 255, 255, 0.2) 50%
+	);
+	background-size: 200% 100%;
+	border-left: 4px solid transparent;
+	font-family: 'Orbitron', sans-serif;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: left;
+	transition: all 0.3s ease;
+}
+
+/* ============== Colors ============== */
+
+.episode {
+	color: #fff;
+}
+.director {
+	color: #3498db;
+}
+.producer {
+	color: #e74c3c;
+}
+.releaseDate {
+	color: #2ecc71;
+}
+.openingCrawl {
+	color: #9b59b6;
+}
+
+/* ============== Hover Effects ============== */
+
+.episode:hover,
+.director:hover,
+.producer:hover,
+.releaseDate:hover,
+.openingCrawl:hover {
+	animation: swing 0.5s ease-in-out, colorChange 2s infinite alternate;
+	background-position: 200% 100%;
+	border-left-color: currentColor;
+	box-shadow: 0px 0px 10px currentColor;
+}
