@@ -12,10 +12,11 @@
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [API SOURCE](#api-source)
+- [API Source](#api-source)
 - [Usage](#usage)
 - [Design Patterns](#design-patterns)
 - [Code Comments](#code-comments)
+- [Data Specifications](#data-specifications)
 - [Future Improvements](#future-improvements)
 - [Author](#author)
 - [License](#license)
@@ -103,6 +104,33 @@ npm start
 ## Code Comments
 
 The codebase contains comments to explain the functionality and purpose of different components and functions. Comments have been added to improve code readability and understanding.
+
+---
+
+## 📊 Data Specifications 
+
+This app is tailored to give you a detailed outlook on Star Wars entities fetched from the SWAPI. 
+Below are the data points that you can expect for different categories:
+
+### 🚀 Starships or Vehicles
+
+- **Name**: The name of the starship
+- **Model**: Technical specifications of the starship
+- **Manufacturer**: Who made this starship
+- **Cost in Credits**: The cost of this starship in galactic credits
+- **Length**: How long the starship is
+- **Crew**: The number of personnel needed to operate the starship
+- **Passengers**: The number of non-crew members the ship can transport
+- **Cargo Capacity**: How much cargo, in kilograms, the ship can carry
+
+### 🎬 Films
+
+- **Title**: The title of the film
+- **Episode Number**: The episode number
+- **Director**: Who directed this film
+- **Producer**: The producer(s) of the film
+- **Release Date**: When the film was released
+- **Opening Crawl**: The text that appears at the beginning of each Star Wars film
 
 ---
 
