@@ -141,6 +141,11 @@ Below are the data points that you can expect for different categories:
 - **Routing & Details Page**: Add routes for details pages with React Router to showcase individual Star Wars entities like starships, vehicles, or films.
 - **User Authentication**: Implement user login to save favorite Star Wars characters or starships.
 - **Enhanced Sorting & Filtering**: Add filters to sort by Star Wars era, film appearance, and others.
+- **Pagination**: Add pagination to display results in batches of 10 or 20.
+- **Data Visualization**: Create a data visualization dashboard to display Star Wars data in a more interactive way.
+- **Dark Mode**: Add a dark mode toggle to switch between light and dark themes.
+- **Accessibility**: Improve accessibility by adding ARIA attributes and improving keyboard navigation.
+- **Performance Optimization**: Improve performance by lazy loading.
 - **Automated Testing**: Introduce basic unit tests for essential functionalities.
 - **Star Wars Quiz**: Implement a Star Wars trivia quiz based on the data from the API.
 - **Character Match**: Build a feature that matches you with a Star Wars character based on a short questionnaire.
