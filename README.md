@@ -63,10 +63,11 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com//.git
+git clone https://github.com/AdrianGeorgeM/ReactStarWarsAPIViewer.git
 
 # Navigate to the project directory
-cd star-wars-data-explorer
+cd ReactStarWarsAPIViewer
+
 
 # Install dependencies
 npm install
