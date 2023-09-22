@@ -12,6 +12,7 @@
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
+- [API SOURCE](#api-source)
 - [Usage](#usage)
 - [Design Patterns](#design-patterns)
 - [Code Comments](#code-comments)
@@ -56,10 +57,15 @@
 - **React**: Bringing you the _ultra-responsive_ user interface and _state-of-the-art_ frontend functionalities.
 - **CSS**: Providing the _visual flair_ and _adaptive layouts_ that make your user experience delightful.
 
+---
+## 📡 API Source
 
+The data for this application is sourced from [The Star Wars API (SWAPI)](https://swapi.dev/). 
+SWAPI is a wonderful, free-to-use API that provides a broad range of information about the Star Wars universe, including starships, films, and vehicles.
+
+I extend my deepest gratitude to the creators and maintainers of this API for making such comprehensive Star Wars data accessible to developers.
 
 ---
-
 ## 🔨 Installation
 
 ```bash
