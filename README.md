@@ -25,6 +25,7 @@
 
 ![Demo GIF](https://i.imgur.com/your-demo-gif.gif)
 
+👉 Check it out ([Link](https://recordit.co/R6JH9LsWLw))
 👉 Check it out ([Live Demo](https://react-star-wars-api-viewer.vercel.app/))
 
 ---
